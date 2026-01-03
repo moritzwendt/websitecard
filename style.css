@@ -38,6 +38,16 @@ body{
     height: 100vh;
 }
 
+.copyright{
+    position: fixed;
+    bottom: 8px;
+    left: 8px;
+    font-size: 12px;
+    color: #000;
+    z-index: 9999;
+    pointer-events: none;
+}
+
 .container{
     background: #fff;
     width: 448px;
@@ -305,4 +315,11 @@ body{
 .copy-success {
     color: #4caf50 !important;
     animation: copySuccess 1.5s ease forwards;
+}
+
+@media (max-width: 460px) {
+    .container {
+        width: 100%;
+        border-radius: 0px;
+    }
 }
